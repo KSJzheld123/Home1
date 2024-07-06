@@ -21,7 +21,7 @@ public class Calc {
             } else if (first.get(i).contains("*")) {
             } else if (first.get(i).contains("/")) {
             } else {
-            }
+            }git
         }
 
         int result = 0;
