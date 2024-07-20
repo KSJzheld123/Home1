@@ -35,7 +35,6 @@ public class Calc {
             result = Integer.parseInt(middle.get(0));
         }
 
-
         for (int i = 0; i < first.size(); i++) {
             if (first.get(i).contains("(")) {
                 indexcount++;
