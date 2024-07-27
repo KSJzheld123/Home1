@@ -90,8 +90,6 @@ public class Calc {
 
         first.removeAll(Arrays.asList("n"));
 
-
-
         for (int i = 1; i < middle.size(); i++) {
             int a = 0;
             if (middle.get(i).contains("*")) {
