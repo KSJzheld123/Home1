@@ -1,18 +1,19 @@
+import java.util.ArrayList;
+
 class Solution {
-    public int[] solution(int[] num_list) {
+    public int[] solution(int[] numbers) {
+        ArrayList<Integer> list = new ArrayList<>();
 
-        int a =  0;
-        int b = 0;
-
-        for(int i = 0; i < num_list.length; i++){
-            if(num_list[i] % 2 == 0){
-                a++;
-            } else if (num_list[i] % 2 == 1) {
-                b++;
-            }
+        for(int i=0; i < numbers.length; i++) {
+            list.add(numbers[i] * 2);
         }
 
-        int[] answer = {a,b};
+        int[] answer = new int[list.size()];
+
+        for(int i=0; i < answer.length; i++) {
+            answer[i] = list.get(i);
+        }
+
         return answer;
     }
 }
